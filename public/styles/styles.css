@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+#canvas1 {
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

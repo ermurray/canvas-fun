@@ -1,7 +1,7 @@
-const canvas = document.getElementById('canvas1');
+const canvas = document.getElementById('fractal-trees');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight - 60;
 
   console.log(ctx);
 

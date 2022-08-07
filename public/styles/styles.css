@@ -18,15 +18,32 @@ nav > div {
 }
 nav.nav-button-container {
 }
+
+div#home {
+  display: block;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: cadetblue;
+}
 #fractal-trees{
+  display: none;
   background: black;
   position: absolute;
   left: 0;
-  top: 50;
+  top: 50px;
 }
 #newtonian-physics{
+  display: none;
   background-color: black;
   position: absolute;
   left: 0;
-  top: 50;
+  top: 50px;
+}
+
+#audio-vis {
+  display: none;
+  background-color: black;
 }

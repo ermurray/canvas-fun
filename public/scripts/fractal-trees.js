@@ -1,7 +1,24 @@
 const canvas = document.getElementById('fractal-trees');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight - 60;
+canvas.height = window.innerHeight - 50;
+let width = canvas.width;
+let height = canvas.height;
+
+handleResize();
+
+function handleResize() {
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight - 50;
+    width = canvas.width;
+    height = canvas.height;
+
+    drawTree(width/2, height -40, height/4, 0, width/70, 'brown', 'green')
+  })
+}
+
+
 
   console.log(ctx);
 
@@ -30,4 +47,4 @@ function drawTree(startX, startY, length, angle, segmentW, color1, color2){
   ctx.restore();
 }
 
-drawTree(canvas.width/2, canvas.height -40, 185, 0, 20, 'brown', 'green')
+drawTree(width/2, height -40, height/4, 0, width/70, 'brown', 'green')
